@@ -61,10 +61,10 @@ namespace TIME_CONVERTER
 
         private void HSTButton_Click(object sender, EventArgs e)
         {
-            var utc = DateTime.UtcNow;
-            TimeZoneInfo alaskaStandardTime = TimeZoneInfo.FindSystemTimeZoneById("Hawaiian Standard Time");
-            var pacificTime = TimeZoneInfo.ConvertTimeFromUtc(utc, alaskaStandardTime);
-            label2.Text = pacificTime.ToString("h:mm tt");
+            var utc = DateTime.UtcNow;//gets universal time
+            TimeZoneInfo alaskaStandardTime = TimeZoneInfo.FindSystemTimeZoneById("Hawaiian Standard Time");//gets hiwaiian time zone 
+            var pacificTime = TimeZoneInfo.ConvertTimeFromUtc(utc, alaskaStandardTime);//converts uni to hiwaiian time zone
+            label2.Text = pacificTime.ToString("h:mm tt");//to sting in label2
         }
     }
 }
