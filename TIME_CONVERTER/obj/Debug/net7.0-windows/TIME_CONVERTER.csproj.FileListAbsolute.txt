@@ -16,3 +16,4 @@ C:\Users\kylel\OneDrive\Desktop\Repos\TIME_CONVERTER\TIME_CONVERTER\obj\Debug\ne
 C:\Users\kylel\OneDrive\Desktop\Repos\TIME_CONVERTER\TIME_CONVERTER\obj\Debug\net7.0-windows\TIME_CONVERTER.genruntimeconfig.cache
 C:\Users\kylel\OneDrive\Desktop\Repos\TIME_CONVERTER\TIME_CONVERTER\obj\Debug\net7.0-windows\ref\TIME_CONVERTER.dll
 C:\Users\kylel\OneDrive\Desktop\Repos\TIME_CONVERTER\TIME_CONVERTER\obj\Debug\net7.0-windows\TIME_CONVERTER.Properties.Resources.resources
+C:\Users\kylel\OneDrive\Desktop\Repos\TIME_CONVERTER\TIME_CONVERTER\obj\Debug\net7.0-windows\TIME_CONVERTER.Form2.resources
