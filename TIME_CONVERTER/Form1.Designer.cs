@@ -40,12 +40,8 @@
             this.HSTButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.modesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nonSystemTimeModesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // currentUserTime
@@ -170,31 +166,6 @@
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.modesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1260, 24);
-            this.menuStrip1.TabIndex = 17;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // modesToolStripMenuItem
-            // 
-            this.modesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nonSystemTimeModesToolStripMenuItem});
-            this.modesToolStripMenuItem.Name = "modesToolStripMenuItem";
-            this.modesToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.modesToolStripMenuItem.Text = "Modes";
-            // 
-            // nonSystemTimeModesToolStripMenuItem
-            // 
-            this.nonSystemTimeModesToolStripMenuItem.Name = "nonSystemTimeModesToolStripMenuItem";
-            this.nonSystemTimeModesToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
-            this.nonSystemTimeModesToolStripMenuItem.Text = "Non System Time Modes";
-            this.nonSystemTimeModesToolStripMenuItem.Click += new System.EventHandler(this.NonSystemTimeModesToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -213,17 +184,12 @@
             this.Controls.Add(this.newTimeZone);
             this.Controls.Add(this.PSTButton);
             this.Controls.Add(this.currentUserTime);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Time Viewer";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -239,8 +205,5 @@
         private Button HSTButton;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem modesToolStripMenuItem;
-        private ToolStripMenuItem nonSystemTimeModesToolStripMenuItem;
     }
 }

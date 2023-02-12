@@ -64,11 +64,6 @@ namespace TIME_CONVERTER
             newTimeZone.Text = conversionTime.ToString("h:mm tt");//to sting in newTimeZone
         }
 
-        private void NonSystemTimeModesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            OFFLINEMode Form2 = new OFFLINEMode();
-            Form2.Show();
-        }
+        
     }
 }
