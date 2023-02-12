@@ -1,11 +1,45 @@
 {
   "version": 3,
   "targets": {
-    "net7.0-windows7.0": {}
+    "net7.0-windows7.0": {
+      "TimeZoneConverter/6.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/TimeZoneConverter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/TimeZoneConverter.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TimeZoneConverter/6.0.1": {
+      "sha512": "vvhLOgRSOvfq5fBv0/Dd1S3N7K2ibO5wp06B5AkuxUpXkgv2aDHw9jB5ZvPg83y9sy+jF9qE7qWybMK46BXBuw==",
+      "type": "package",
+      "path": "timezoneconverter/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/TimeZoneConverter.dll",
+        "lib/net462/TimeZoneConverter.xml",
+        "lib/net6.0/TimeZoneConverter.dll",
+        "lib/net6.0/TimeZoneConverter.xml",
+        "lib/netstandard2.0/TimeZoneConverter.dll",
+        "lib/netstandard2.0/TimeZoneConverter.xml",
+        "timezoneconverter.6.0.1.nupkg.sha512",
+        "timezoneconverter.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0-windows7.0": []
+    "net7.0-windows7.0": [
+      "TimeZoneConverter >= 6.0.1"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\kylel\\.nuget\\packages\\": {},
@@ -51,6 +85,12 @@
     "frameworks": {
       "net7.0-windows7.0": {
         "targetAlias": "net7.0-windows",
+        "dependencies": {
+          "TimeZoneConverter": {
+            "target": "Package",
+            "version": "[6.0.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

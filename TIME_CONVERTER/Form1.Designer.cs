@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.currentUserTime = new System.Windows.Forms.Label();
             this.PSTButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.newTimeZone = new System.Windows.Forms.Label();
             this.UTCTime = new System.Windows.Forms.Label();
             this.ESTButton = new System.Windows.Forms.Button();
             this.CSTButton = new System.Windows.Forms.Button();
@@ -40,16 +40,19 @@
             this.HSTButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.modesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nonSystemTimeModesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // currentUserTime
             // 
             this.currentUserTime.BackColor = System.Drawing.Color.Transparent;
             this.currentUserTime.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.currentUserTime.Location = new System.Drawing.Point(12, 9);
+            this.currentUserTime.Location = new System.Drawing.Point(480, 24);
             this.currentUserTime.Name = "currentUserTime";
             this.currentUserTime.Size = new System.Drawing.Size(313, 48);
             this.currentUserTime.TabIndex = 1;
@@ -61,7 +64,7 @@
             // PSTButton
             // 
             this.PSTButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.PSTButton.Location = new System.Drawing.Point(593, 181);
+            this.PSTButton.Location = new System.Drawing.Point(200, 181);
             this.PSTButton.Name = "PSTButton";
             this.PSTButton.Size = new System.Drawing.Size(125, 38);
             this.PSTButton.TabIndex = 2;
@@ -69,21 +72,21 @@
             this.PSTButton.UseVisualStyleBackColor = false;
             this.PSTButton.Click += new System.EventHandler(this.PSTButton_Click);
             // 
-            // label2
+            // newTimeZone
             // 
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(200, 280);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(780, 120);
-            this.label2.TabIndex = 6;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.newTimeZone.BackColor = System.Drawing.Color.White;
+            this.newTimeZone.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.newTimeZone.Location = new System.Drawing.Point(200, 280);
+            this.newTimeZone.Name = "newTimeZone";
+            this.newTimeZone.Size = new System.Drawing.Size(780, 120);
+            this.newTimeZone.TabIndex = 6;
+            this.newTimeZone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UTCTime
             // 
             this.UTCTime.BackColor = System.Drawing.Color.Transparent;
             this.UTCTime.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UTCTime.Location = new System.Drawing.Point(952, 16);
+            this.UTCTime.Location = new System.Drawing.Point(954, 38);
             this.UTCTime.Name = "UTCTime";
             this.UTCTime.Size = new System.Drawing.Size(226, 34);
             this.UTCTime.TabIndex = 8;
@@ -93,7 +96,7 @@
             // ESTButton
             // 
             this.ESTButton.BackColor = System.Drawing.Color.Red;
-            this.ESTButton.Location = new System.Drawing.Point(200, 181);
+            this.ESTButton.Location = new System.Drawing.Point(855, 181);
             this.ESTButton.Name = "ESTButton";
             this.ESTButton.Size = new System.Drawing.Size(125, 38);
             this.ESTButton.TabIndex = 9;
@@ -104,7 +107,7 @@
             // CSTButton
             // 
             this.CSTButton.BackColor = System.Drawing.Color.Yellow;
-            this.CSTButton.Location = new System.Drawing.Point(331, 181);
+            this.CSTButton.Location = new System.Drawing.Point(462, 181);
             this.CSTButton.Name = "CSTButton";
             this.CSTButton.Size = new System.Drawing.Size(125, 38);
             this.CSTButton.TabIndex = 10;
@@ -115,7 +118,7 @@
             // MSTButton
             // 
             this.MSTButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.MSTButton.Location = new System.Drawing.Point(462, 181);
+            this.MSTButton.Location = new System.Drawing.Point(331, 181);
             this.MSTButton.Name = "MSTButton";
             this.MSTButton.Size = new System.Drawing.Size(125, 38);
             this.MSTButton.TabIndex = 11;
@@ -126,7 +129,7 @@
             // ASTButton
             // 
             this.ASTButton.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ASTButton.Location = new System.Drawing.Point(724, 181);
+            this.ASTButton.Location = new System.Drawing.Point(593, 181);
             this.ASTButton.Name = "ASTButton";
             this.ASTButton.Size = new System.Drawing.Size(125, 38);
             this.ASTButton.TabIndex = 12;
@@ -138,7 +141,7 @@
             // 
             this.HSTButton.BackColor = System.Drawing.Color.Fuchsia;
             this.HSTButton.ForeColor = System.Drawing.Color.Black;
-            this.HSTButton.Location = new System.Drawing.Point(855, 181);
+            this.HSTButton.Location = new System.Drawing.Point(724, 181);
             this.HSTButton.Name = "HSTButton";
             this.HSTButton.Size = new System.Drawing.Size(125, 38);
             this.HSTButton.TabIndex = 13;
@@ -167,25 +170,38 @@
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // menuStrip1
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(1134, 682);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 91);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "OFFLINE MODE";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1260, 24);
+            this.menuStrip1.TabIndex = 17;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // modesToolStripMenuItem
+            // 
+            this.modesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nonSystemTimeModesToolStripMenuItem});
+            this.modesToolStripMenuItem.Name = "modesToolStripMenuItem";
+            this.modesToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.modesToolStripMenuItem.Text = "Modes";
+            // 
+            // nonSystemTimeModesToolStripMenuItem
+            // 
+            this.nonSystemTimeModesToolStripMenuItem.Name = "nonSystemTimeModesToolStripMenuItem";
+            this.nonSystemTimeModesToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.nonSystemTimeModesToolStripMenuItem.Text = "Non System Time Modes";
+            this.nonSystemTimeModesToolStripMenuItem.Click += new System.EventHandler(this.NonSystemTimeModesToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1260, 790);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.HSTButton);
@@ -194,22 +210,27 @@
             this.Controls.Add(this.CSTButton);
             this.Controls.Add(this.ESTButton);
             this.Controls.Add(this.UTCTime);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.newTimeZone);
             this.Controls.Add(this.PSTButton);
             this.Controls.Add(this.currentUserTime);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Time Viewer";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private Label currentUserTime;
         private Button PSTButton;
-        private Label label2;
+        private Label newTimeZone;
         private Label UTCTime;
         private Button ESTButton;
         private Button CSTButton;
@@ -218,6 +239,8 @@
         private Button HSTButton;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem modesToolStripMenuItem;
+        private ToolStripMenuItem nonSystemTimeModesToolStripMenuItem;
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4OguPpEXs9jiqGf4ZO11B/x+NSDACi96Adit/jvKto8kU3B7eMZGrv0OR5sfd94bLJmagzqxFUPzyW2tRCsENQ==",
+  "dgSpecHash": "XmkuRRotTXMccoxErr2LgeP4QAh0lbFkyoOw7IieAhfZMdftwVFRUC01QxCt517zKDfgj9/HjRnLWHk0P97lIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kylel\\OneDrive\\Desktop\\Repos\\TIME_CONVERTER\\TIME_CONVERTER\\TIME_CONVERTER.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\kylel\\.nuget\\packages\\timezoneconverter\\6.0.1\\timezoneconverter.6.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
