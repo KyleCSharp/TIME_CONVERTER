@@ -48,11 +48,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kylel\\OneDrive\\Desktop\\Repos\\TIME_CONVERTER\\TIME_CONVERTER\\TIME_CONVERTER.csproj",
+      "projectUniqueName": "D:\\repos\\TIME_CONVERTER\\TIME_CONVERTER\\TIME_CONVERTER.csproj",
       "projectName": "TIME_CONVERTER",
-      "projectPath": "C:\\Users\\kylel\\OneDrive\\Desktop\\Repos\\TIME_CONVERTER\\TIME_CONVERTER\\TIME_CONVERTER.csproj",
+      "projectPath": "D:\\repos\\TIME_CONVERTER\\TIME_CONVERTER\\TIME_CONVERTER.csproj",
       "packagesPath": "C:\\Users\\kylel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kylel\\OneDrive\\Desktop\\Repos\\TIME_CONVERTER\\TIME_CONVERTER\\obj\\",
+      "outputPath": "D:\\repos\\TIME_CONVERTER\\TIME_CONVERTER\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -110,7 +110,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -12,8 +12,8 @@ namespace TIME_CONVERTER
         private void GetUserTime(object sender, EventArgs e)
         {
             DateTime dt = DateTime.Now;
-            currentUserTime.Text = dt.ToString("Local "+"h:mm tt");
-            UTCTime.Text = DateTime.UtcNow.ToString("Uni "+"h:mm tt");
+            currentUserTime.Text = dt.ToString("Local " + "h:mm tt");
+            UTCTime.Text = DateTime.UtcNow.ToString("Uni " + "h:mm tt");
         }
 
         private void PSTButton_Click(object sender, EventArgs e)
@@ -64,6 +64,6 @@ namespace TIME_CONVERTER
             newTimeZone.Text = conversionTime.ToString("h:mm tt");//to sting in newTimeZone
         }
 
-        
+
     }
 }
